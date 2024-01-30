@@ -14,4 +14,7 @@
     .btn-secondary {
         @apply border-2 border-black inline-block px-10 py-4 text-black hover:bg-black hover:text-white;
     }
+    .btn-tertiary {
+        @apply border-2 border-white text-white block px-10 py-4  hover:bg-white hover:text-black;
+    }
 }
