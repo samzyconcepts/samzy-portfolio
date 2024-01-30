@@ -7,7 +7,7 @@ import ageCalc from "../assets/age-calc.png";
 
 const Work = () => {
     return (
-        <section className="bg-white">
+        <section id="work" className="bg-white">
             <div className="container py-8">
                 <Skill />
                 <div className="flex items-center gap-2">

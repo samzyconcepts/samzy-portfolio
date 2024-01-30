@@ -1,8 +1,11 @@
+import resume from "../assets/resume.pdf";
+
 function Navbar() {
     return (
         <nav className="flex items-center justify-between w-2/6 h-20 px-12 rounded-2xl border-white border-2 bg-transparent backdrop-blur-md my-3 m-auto">
             <h1 className="font-clash font-semibold flex items-center">
-                <svg className="w-6"
+                <svg
+                    className="w-6"
                     width="30"
                     height="28"
                     viewBox="0 0 30 28"
@@ -17,8 +20,10 @@ function Navbar() {
             </h1>
 
             <div className="flex gap-4">
-                <a href="#">Work</a>
-                <a href="download">Download Resume</a>
+                <a href="#work">Work</a>
+                <a href={resume} download>
+                    Download Resume
+                </a>
             </div>
         </nav>
     );
