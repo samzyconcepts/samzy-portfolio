@@ -11,20 +11,27 @@ const Footer = () => {
 
                 <ul className="flex items-center gap-4">
                     <li>
-                        <a href="https://x.com/cre8veSam" rel="noreferrer" target="_blank">
+                        <a
+                            href="https://x.com/cre8veSam"
+                            className="hover:text-orange"
+                            rel="noreferrer"
+                            target="_blank">
                             Twitter
                         </a>
                     </li>
                     <li>
                         <a
                             href="https://www.linkedin.com/in/samsonoderinwale/"
+                            className="hover:text-orange"
                             rel="noreferrer"
                             target="_blank">
                             LinkedIn
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:oderinwalesamson1@gmail.com?cc=samzyolufemi@gmail.com">
+                        <a
+                            href="mailto:oderinwalesamson1@gmail.com?cc=samzyolufemi@gmail.com"
+                            className="hover:text-orange">
                             Mail
                         </a>
                     </li>
