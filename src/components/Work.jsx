@@ -16,8 +16,8 @@ const Work = () => {
                 </div>
                 <h2 className="font-clash text-5xl my-6">Recent Works</h2>
 
-                <section>
-                    <div className="w-1/2 h-[600px] bg-black hover:bg-orange text-white p-14 rounded-3xl overflow-hidden">
+                <section className="grid grid-cols-2 gap-8">
+                    <div className="h-[600px] bg-black hover:bg-orange text-white p-14 rounded-3xl overflow-hidden">
                         <h2 className="title text-4xl font-clash">Agrocap Token</h2>
                         <p className="description my-4">
                             AgroCap token is a project seeking to transform the outdated and
@@ -50,7 +50,7 @@ const Work = () => {
                         </div>
                     </div>
 
-                    <div className="w-1/2 h-[600px] bg-black hover:bg-orange text-white p-14 rounded-3xl overflow-hidden">
+                    <div className="h-[600px] bg-black hover:bg-orange text-white p-14 rounded-3xl overflow-hidden">
                         <h2 className="title text-4xl font-clash">Instaskool</h2>
                         <p className="description my-4">
                             Instaskool is an online educational platform, that provides educational
@@ -82,7 +82,7 @@ const Work = () => {
                         </div>
                     </div>
 
-                    <div className="w-1/2 h-[600px] bg-black hover:bg-orange text-white p-14 rounded-3xl overflow-hidden">
+                    <div className="h-[600px] bg-black hover:bg-orange text-white p-14 rounded-3xl overflow-hidden">
                         <h2 className="title text-4xl font-clash">Shortly</h2>
                         <p className="description my-4">
                             Link shortener app. It is a single page web app for shorting links. The
@@ -114,7 +114,7 @@ const Work = () => {
                         </div>
                     </div>
 
-                    <div className="w-1/2 h-[600px] bg-black hover:bg-orange text-white p-14 rounded-3xl overflow-hidden">
+                    <div className="h-[600px] bg-black hover:bg-orange text-white p-14 rounded-3xl overflow-hidden">
                         <h2 className="title text-4xl font-clash">Get your age</h2>
                         <p className="description my-4">
                             This a platform that you use to calculate how old I am in terms of days,

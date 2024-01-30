@@ -34,7 +34,7 @@ const Hero = () => {
                         </svg>
                     </button>
                     <button className="btn-secondary flex items-center gap-2">
-                        MY WORKS
+                        PORTFOLIO
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"

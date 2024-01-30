@@ -1,6 +1,8 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -8,6 +10,8 @@ function App() {
             <Navbar />
             <Hero />
             <Work />
+            <Contact />
+            <Footer />
         </>
     );
 }
