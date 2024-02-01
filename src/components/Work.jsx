@@ -24,7 +24,9 @@ const Work = () => {
                             exclusionary agric financial infrastructure, by utilizing blockchain
                             technology.
                         </p>
-                        <a href="#" className="btn-tertiary w-fit flex items-center gap-2">
+                        <a
+                            href="https://agrocaptoken.com"
+                            className="btn-tertiary w-fit flex items-center gap-2">
                             VISIT SITE
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +58,9 @@ const Work = () => {
                             Instaskool is an online educational platform, that provides educational
                             contents from basic to secondary school level.
                         </p>
-                        <a href="#" className="btn-tertiary w-fit flex items-center gap-2">
+                        <a
+                            href="https://instaskool.com"
+                            className="btn-tertiary w-fit flex items-center gap-2">
                             VISIT SITE
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +92,9 @@ const Work = () => {
                             Link shortener app. It is a single page web app for shorting links. The
                             website make use of API request to shorting link.
                         </p>
-                        <a href="#" className="btn-tertiary w-fit flex items-center gap-2">
+                        <a
+                            href="https://url-shortening-api-landing-page-rho.vercel.app/"
+                            className="btn-tertiary w-fit flex items-center gap-2">
                             VISIT SITE
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
@@ -120,7 +126,9 @@ const Work = () => {
                             This a platform that you use to calculate how old I am in terms of days,
                             weeks and years.
                         </p>
-                        <a href="#" className="btn-tertiary w-fit flex items-center gap-2">
+                        <a
+                            href="https://kibo-web-dev-fundamentals-july-23.github.io/wdf-jul-23-final-project-code-addicts/"
+                            className="btn-tertiary w-fit flex items-center gap-2">
                             VISIT SITE
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

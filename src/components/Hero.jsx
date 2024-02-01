@@ -1,5 +1,6 @@
 import StarSVG from "./StarSVG";
 import profileImg from "../assets/profileImg.png";
+import resume from "../assets/resume.pdf";
 
 const Hero = () => {
     return (
@@ -18,7 +19,11 @@ const Hero = () => {
                     interactions.
                 </p>
                 <div className="flex gap-4 mt-6">
-                    <button className="btn-primary flex items-center gap-2">
+                    <a
+                        href={resume}
+                        id="Samson resume"
+                        download
+                        className="btn-primary flex items-center gap-2">
                         RESUME
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +37,7 @@ const Hero = () => {
                                 className="fill-current"
                             />
                         </svg>
-                    </button>
+                    </a>
                     <button className="btn-secondary flex items-center gap-2">
                         PORTFOLIO
                         <svg
