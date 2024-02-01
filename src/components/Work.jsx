@@ -26,6 +26,8 @@ const Work = () => {
                         </p>
                         <a
                             href="https://agrocaptoken.com"
+                            target="_blank"
+                            rel="noreferrer"
                             className="btn-tertiary w-fit flex items-center gap-2">
                             VISIT SITE
                             <svg
@@ -60,6 +62,8 @@ const Work = () => {
                         </p>
                         <a
                             href="https://instaskool.com"
+                            target="_blank"
+                            rel="noreferrer"
                             className="btn-tertiary w-fit flex items-center gap-2">
                             VISIT SITE
                             <svg
@@ -94,6 +98,8 @@ const Work = () => {
                         </p>
                         <a
                             href="https://url-shortening-api-landing-page-rho.vercel.app/"
+                            target="_blank"
+                            rel="noreferrer"
                             className="btn-tertiary w-fit flex items-center gap-2">
                             VISIT SITE
                             <svg
@@ -128,6 +134,8 @@ const Work = () => {
                         </p>
                         <a
                             href="https://kibo-web-dev-fundamentals-july-23.github.io/wdf-jul-23-final-project-code-addicts/"
+                            target="_blank"
+                            rel="noreferrer"
                             className="btn-tertiary w-fit flex items-center gap-2">
                             VISIT SITE
                             <svg
