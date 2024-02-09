@@ -1,16 +1,16 @@
 const Contact = () => {
     return (
         <section className="container">
-            <div className="flex items-center justify-between rounded-2xl bg-black my-12 p-24">
+            <div className="flex flex-col lg:flex-row lg:items-center justify-between rounded-2xl bg-black my-12 p-12 md:p-24 gap-4">
                 <div>
-                    <h1 className="text-7xl font-black text-white">
+                    <h1 className="text-4xl md:text-7xl font-black text-white">
                         Let’s work together <br /> on your next project
                     </h1>
-                    <p className="text-white-darker text-xl mt-2">
+                    <p className="text-white-darker text-base md:text-xl mt-2">
                         So we can build something interesting together
                     </p>
                 </div>
-                <button className="btn-primary flex items-center gap-2">
+                <button className="btn-primary flex items-center justify-center gap-2">
                     CONTACT
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

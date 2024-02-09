@@ -2,7 +2,7 @@ import resume from "../assets/resume.pdf";
 
 function Navbar() {
     return (
-        <nav className="flex items-center justify-between w-2/6 h-20 px-12 rounded-2xl border-white border-2 bg-transparent backdrop-blur-md my-3 m-auto">
+        <nav className="container sticky top-2 z-50 flex items-center justify-between  xl:w-2/6 h-20 px-5 sm:px-12 rounded-2xl border-white border-2 bg-transparent backdrop-blur-md my-3 m-auto">
             <h1 className="font-clash font-semibold flex items-center">
                 <svg
                     className="w-6"
@@ -19,7 +19,7 @@ function Navbar() {
                 Cre8veSam
             </h1>
 
-            <div className="flex gap-4">
+            <div className="flex gap-4 text-sm md:text-base">
                 <a href="#work">Work</a>
                 <a href={resume} download>
                     Download Resume

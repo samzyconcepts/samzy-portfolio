@@ -4,7 +4,7 @@ import resume from "../assets/resume.pdf";
 
 const Hero = () => {
     return (
-        <header className="container grid grid-cols-2 justify-between items-center">
+        <header className="container grid lg:grid-cols-2 justify-between items-center gap-6 pt-5 lg:pt-0">
             <div>
                 <div className="flex items-center gap-2">
                     <StarSVG />
@@ -118,7 +118,7 @@ const Hero = () => {
                     </a>
                 </div>
             </div>
-            <div className="relative place-self-end">
+            <div className="relative place-self-center lg:place-self-end">
                 {/* Background for image */}
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
