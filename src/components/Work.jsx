@@ -12,7 +12,7 @@ const Work = () => {
                 <Skill />
                 <div className="flex items-center gap-2">
                     <StarSVG />
-                    <h4>FEATURED PROJECTS</h4>
+                    <h4 className="text-xs sm:text-base">FEATURED PROJECTS</h4>
                 </div>
                 <h2 className="font-clash text-5xl my-6">Recent Works</h2>
 
