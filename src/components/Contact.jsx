@@ -1,7 +1,11 @@
 const Contact = () => {
     return (
         <section className="container">
-            <div className="flex flex-col lg:flex-row lg:items-center justify-between rounded-2xl bg-black my-12 p-12 md:p-24 gap-4">
+            <div
+                className="flex flex-col lg:flex-row lg:items-center justify-between rounded-2xl bg-black my-12 p-12 md:p-24 gap-4"
+                data-aos="fade-up"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-sine">
                 <div>
                     <h1 className="text-4xl md:text-7xl font-black text-white">
                         Let’s work together <br /> on your next project

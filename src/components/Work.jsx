@@ -6,8 +6,8 @@ import projects from "../projectsData";
 const Work = () => {
     return (
         <section id="work" className="bg-white">
-            <div className="container py-8">
-                <Skill />
+            <Skill />
+            <div className="container py-8 overflow-hidden">
                 <div className="flex items-center gap-2">
                     <StarSVG />
                     <h4 className="text-xs sm:text-base">FEATURED PROJECTS</h4>
@@ -15,11 +15,15 @@ const Work = () => {
                 <h2 className="font-clash text-5xl my-6">Recent Works</h2>
 
                 <section className="grid md:grid-cols-2 gap-8">
-                    {projects.map((project) => {
+                    {projects.map((project, index) => {
+                        const isEven = index % 2 === 0;
                         return (
                             <div
                                 key={project.name}
-                                className="h-[600px] bg-black hover:bg-orange text-white p-8 md:p-14 rounded-3xl overflow-hidden">
+                                className="h-[600px] bg-black hover:bg-orange text-white p-8 md:p-14 rounded-3xl overflow-hidden"
+                                data-aos={isEven ? "fade-right" : "fade-left"}
+                                data-aos-duration="800"
+                                data-aos-easing="ease-in-sine">
                                 <h2 className="title text-4xl font-clash">{project.name}</h2>
                                 <p className="description my-4">{project.description}</p>
                                 <a

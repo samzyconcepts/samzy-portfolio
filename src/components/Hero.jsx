@@ -6,21 +6,32 @@ const Hero = () => {
     return (
         <header className="container grid lg:grid-cols-2 justify-between items-center gap-6 pt-5 lg:pt-0">
             <div>
-                <div className="flex items-center gap-2 justify-center sm:justify-normal">
+                <div
+                    className="flex items-center gap-2 justify-center sm:justify-normal"
+                    data-aos="fade-right">
                     <StarSVG />
                     <h4 className="text-xs sm:text-base">
                         FRONTEND DEVELOPER || CREATIVE DESIGNER
                     </h4>
                 </div>
 
-                <h1 className="text-5xl sm:text-6xl font-clash font-bold my-4 text-center sm:text-left">
+                <h1
+                    className="text-5xl sm:text-6xl font-clash font-bold my-4 text-center sm:text-left"
+                    data-aos="fade-right"
+                    data-aos-delay="300">
                     Hello! I&apos;m <br /> Samson Oderinwale
                 </h1>
-                <p className="text-base sm:text-xl text-center sm:text-left">
+                <p
+                    data-aos="fade-right"
+                    data-aos-delay="400"
+                    className="text-base sm:text-xl text-center sm:text-left">
                     Designing and Developing visually stunning products, interfaces and
                     interactions.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 mt-6">
+                <div
+                    data-aos="fade-right"
+                    data-aos-delay="500"
+                    className="flex flex-col sm:flex-row gap-4 mt-6">
                     <a
                         href={resume}
                         id="Samson resume"
@@ -56,7 +67,10 @@ const Hero = () => {
                         </svg>
                     </button>
                 </div>
-                <div className="mt-10 flex items-center justify-center sm:justify-normal gap-1 sm:gap-4">
+                <div
+                    data-aos="fade-right"
+                    data-aos-delay="600"
+                    className="mt-10 flex items-center justify-center sm:justify-normal gap-1 sm:gap-4">
                     <p>Connect with me</p>
 
                     <hr className="w-10 border-t-2 border-black" />
@@ -128,13 +142,22 @@ const Hero = () => {
                     height="515"
                     viewBox="0 0 503 515"
                     fill="none"
-                    className="absolute -z-10 w-full">
+                    className="absolute -z-10 w-full"
+                    data-aos="fade-up"
+                    data-aos-duration="1500">
                     <path
                         d="M305.566 264.331L464.113 212.917L502.391 200.156L469.274 119.914L432.95 138.315L284.661 214.22L319.419 51.3274L327.854 11.5133L241.044 0.162864L238.96 40.8075L230.669 207.16L106.88 95.6814L76.5084 68.5599L23.8738 137.59L57.5845 159.764L197.582 250.212L39.0362 301.626L0.757632 314.387L33.875 394.629L70.1991 376.228L218.488 300.323L183.73 463.216L175.294 503.03L262.105 514.38L264.189 473.735L272.48 307.383L396.268 418.861L426.64 445.983L479.275 376.953L445.564 354.779L305.566 264.331Z"
                         fill="#FD6303"
                     />
                 </svg>
-                <img src={profileImg} alt="Samson Oderinwale" className="w-[508px]" />
+                <img
+                    src={profileImg}
+                    alt="Samson Oderinwale"
+                    className="w-[508px]"
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    data-aos-delay="200"
+                />
             </div>
         </header>
     );
