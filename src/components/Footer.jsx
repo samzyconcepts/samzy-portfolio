@@ -9,7 +9,7 @@ const Footer = () => {
                     <h4>&copy; Cre8veSam 2023</h4>
                 </div>
 
-                <ul className="flex items-center gap-4">
+                <ul className="flex items-center gap-2 sm:gap-4">
                     <li>
                         <a
                             href="https://x.com/cre8veSam"

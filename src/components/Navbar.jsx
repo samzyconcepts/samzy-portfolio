@@ -20,8 +20,8 @@ function Navbar() {
             </h1>
 
             <div className="flex gap-4 text-sm md:text-base">
-                <a href="#work">Work</a>
-                <a href={resume} download>
+                <a href="#work" className="hover:text-orange">Work</a>
+                <a href={resume} className="hover:text-orange" download>
                     Download Resume
                 </a>
             </div>
