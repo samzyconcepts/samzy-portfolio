@@ -1,10 +1,10 @@
 const projects = [
     {
-        name: "Agrocap Token",
+        name: "Instaflow website",
         description:
-            "AgroCap token is a project seeking to transform the outdated and exclusionary agric financial infrastructure, by utilizing blockchain technology.",
-        link: "https://agrocaptoken.com",
-        image: "images/agrocap.png",
+            "Effortlessly send money, settle bills, and convert currencies instantly — limitless possibilities, zero hassle.",
+        link: "https://instaflow.ca",
+        image: "images/instaflow-design.png",
     },
     {
         name: "Instaskool",

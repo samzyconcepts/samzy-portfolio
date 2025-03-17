@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="flex justify-between py-4">
                 <div className="flex gap-2">
                     <StarSVG />
-                    <h4>&copy; Cre8veSam 2023</h4>
+                    <h4>&copy; Cre8veSam 2025</h4>
                 </div>
 
                 <ul className="flex items-center gap-2 sm:gap-4">

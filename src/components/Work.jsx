@@ -12,25 +12,25 @@ const Work = () => {
                     <StarSVG />
                     <h4 className="text-xs sm:text-base">FEATURED PROJECTS</h4>
                 </div>
-                <h2 className="font-clash text-5xl my-6">Recent Works</h2>
+                <h2 className="my-6 text-5xl font-clash">Recent Works</h2>
 
-                <section className="grid md:grid-cols-2 gap-8">
+                <section className="grid gap-8 md:grid-cols-2">
                     {projects.map((project, index) => {
                         const isEven = index % 2 === 0;
                         return (
                             <div
                                 key={project.name}
-                                className="h-[600px] bg-black hover:bg-orange text-white p-8 md:p-14 rounded-3xl overflow-hidden"
+                                className="p-8 overflow-hidden text-white bg-black h-fit hover:bg-orange md:p-14 rounded-3xl"
                                 data-aos={isEven ? "fade-right" : "fade-left"}
                                 data-aos-duration="800"
                                 data-aos-easing="ease-in-sine">
-                                <h2 className="title text-4xl font-clash">{project.name}</h2>
-                                <p className="description my-4">{project.description}</p>
+                                <h2 className="text-4xl title font-clash">{project.name}</h2>
+                                <p className="my-4 description">{project.description}</p>
                                 <a
                                     href={project.link}
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="btn-tertiary w-fit flex items-center gap-2">
+                                    className="flex items-center gap-2 btn-tertiary w-fit">
                                     VISIT SITE
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -45,11 +45,11 @@ const Work = () => {
                                         />
                                     </svg>
                                 </a>
-                                <div className="mt-4 w-[650px] h-[450px] bg-white-darker rounded-2xl p-4">
-                                    <div className="inner bg-black rounded-lg p-4 h-full w-full">
+                                <div className="w-full p-4 mt-4 h-fit bg-white-darker rounded-xl">
+                                    <div className="w-full h-full overflow-hidden bg-black rounded">
                                         <img
                                             src={project.image}
-                                            className="h-full w-full object-cover"
+                                            className="object-cover w-full h-full"
                                             alt={project.name}
                                         />
                                     </div>
