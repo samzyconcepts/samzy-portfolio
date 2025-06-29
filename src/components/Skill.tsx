@@ -27,7 +27,7 @@ const Skill = () => {
                 data-aos="fade-up"
                 data-aos-duration="500"
                 data-aos-easing="ease-in-back">
-                <Marquee gradient={false} speed={100} pauseOnHover className="py-8 overflow-hidden" autoFill={true}>
+                <Marquee gradient={false} speed={100} pauseOnHover={false} className="py-8 overflow-hidden" autoFill={true}>
                     {skills.map((skill, idx) => (
                         <div key={idx} className="flex flex-col items-center mx-8 md:min-w-[100px]">
                             <img className="w-10 mb-2 sm:w-20" src={skill.img} alt={skill.label} />

@@ -1,3 +1,6 @@
+import { Mail } from "lucide-react";
+import { Button } from "./ui/button";
+
 const Contact = () => {
     return (
         <section className="container">
@@ -14,21 +17,11 @@ const Contact = () => {
                         So we can build something interesting together
                     </p>
                 </div>
-                <button className="flex items-center justify-center gap-2 btn-primary">
-                    CONTACT
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none">
-                        <path
-                            d="M5.33333 0V2.13333H12.3627L0 14.496L1.504 16L13.8667 3.63733V10.6667H16V0H5.33333Z"
-                            fill=""
-                            className="fill-current"
-                        />
-                    </svg>
-                </button>
+                
+                <Button size="lg" className="flex items-center justify-center gap-2 uppercase">
+                    Contact
+                    <Mail/>
+                </Button>
             </div>
         </section>
     );
