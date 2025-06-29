@@ -5,7 +5,7 @@ import projects from "../projectsData";
 
 const Work = () => {
     return (
-        <section id="work" className="bg-white">
+        <section id="work" className="bg-white dark:bg-black">
             <Skill />
             <div className="container py-8 overflow-hidden">
                 <div className="flex items-center gap-2">
@@ -20,7 +20,7 @@ const Work = () => {
                         return (
                             <div
                                 key={project.name}
-                                className="p-8 overflow-hidden text-white bg-black h-fit hover:bg-orange md:p-14 rounded-3xl"
+                                className="p-8 overflow-hidden text-white bg-black h-fit hover:bg-orange md:p-14 rounded-3xl dark:bg-muted dark:hover:bg-orange"
                                 data-aos={isEven ? "fade-right" : "fade-left"}
                                 data-aos-duration="800"
                                 data-aos-easing="ease-in-sine">

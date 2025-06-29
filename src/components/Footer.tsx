@@ -16,7 +16,7 @@ const Footer = () => {
                             className="hover:text-orange"
                             rel="noreferrer"
                             target="_blank">
-                            Twitter
+                            X <span className="italic text-muted-foreground">(formerly Twitter)</span>
                         </a>
                     </li>
                     <li>
