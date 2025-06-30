@@ -1,7 +1,7 @@
 import StarSVG from "./StarSVG";
 import profileImg from "../assets/profileImg.png";
 import resume from "../assets/resume.pdf";
-import { Button } from "./ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import { FileDown, Mail } from "lucide-react";
 
 // I didn’t wait for perfect conditions — I learned, built, and shipped. Now I help teams and brands bring ideas to life with modern, scalable frontends that feel as good as they look.
@@ -26,9 +26,12 @@ const Hero = () => {
                     <Button size={"lg"}>
                         Say Hello <Mail />
                     </Button>
-                    <Button variant={"outline"} size={"lg"}>
+
+                    <a
+                        href="https://drive.google.com/drive/folders/14E6HRSro8pxIWO3JcozsY6qGv-c6M5QE?usp=sharing"
+                        className={`${buttonVariants({ variant: "outline", size: "lg" })}`}>
                         Get Resume <FileDown />
-                    </Button>
+                    </a>
                 </div>
                 <div data-aos="fade-right" data-aos-delay="600" className="flex items-center justify-center gap-1 mt-10 sm:justify-normal sm:gap-4">
                     <p>Connect with me</p>

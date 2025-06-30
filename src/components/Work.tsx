@@ -1,7 +1,7 @@
 import Skill from "./Skill";
 import StarSVG from "./StarSVG";
-
 import projects from "../projectsData";
+import { MoveRight } from "lucide-react";
 
 const Work = () => {
     return (
@@ -18,43 +18,27 @@ const Work = () => {
                     {projects.map((project, index) => {
                         const isEven = index % 2 === 0;
                         return (
-                            <div
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noreferrer"
                                 key={project.name}
-                                className="p-8 overflow-hidden text-white bg-black h-fit hover:bg-orange md:p-14 rounded-3xl dark:bg-muted dark:hover:bg-orange"
+                                className="overflow-hidden border-b-2 bg-white-dark hover:border-orange h-fit hover:bg-orange/15 dark:bg-muted dark:hover:bg-orange/30 rounded-t-3xl"
                                 data-aos={isEven ? "fade-right" : "fade-left"}
                                 data-aos-duration="800"
                                 data-aos-easing="ease-in-sine">
-                                <h2 className="text-4xl title font-clash">{project.name}</h2>
-                                <p className="my-4 description">{project.description}</p>
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="flex items-center gap-2 btn-tertiary w-fit">
-                                    VISIT SITE
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 16 16"
-                                        fill="none">
-                                        <path
-                                            d="M5.33333 0V2.13333H12.3627L0 14.496L1.504 16L13.8667 3.63733V10.6667H16V0H5.33333Z"
-                                            fill=""
-                                            className="fill-current"
-                                        />
-                                    </svg>
-                                </a>
-                                <div className="w-full p-4 mt-4 h-fit bg-white-darker rounded-xl">
-                                    <div className="w-full h-full overflow-hidden bg-black rounded">
-                                        <img
-                                            src={project.image}
-                                            className="object-cover w-full h-full"
-                                            alt={project.name}
-                                        />
-                                    </div>
+                                <div className="w-full overflow-hidden bg-black h-[420px]">
+                                    <img src={project.image} className="object-cover w-full h-full" alt={project.name} />
                                 </div>
-                            </div>
+
+                                <div className="px-8 py-6">
+                                    <div className="flex items-center justify-between">
+                                        <h2 className="text-4xl font-bold font-clash">{project.name}</h2>
+                                        <MoveRight />
+                                    </div>
+                                    <p className="my-4 text-xl text-muted-foreground">{project.description}</p>
+                                </div>
+                            </a>
                         );
                     })}
                 </section>

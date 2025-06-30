@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import resume from "../assets/resume.pdf";
+import { useState } from "react";
 import { ModeToggle } from "./mode-toggle";
 import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
@@ -24,8 +23,11 @@ function Navbar() {
                     <a href="#work" className="hidden hover:text-orange md:block">
                         Projects
                     </a>
-                    <a href={resume} className="hidden hover:text-orange md:block" download>
-                        Download Resume
+                    <a
+                        href="https://drive.google.com/drive/folders/14E6HRSro8pxIWO3JcozsY6qGv-c6M5QE?usp=sharing"
+                        className="hidden hover:text-orange md:block"
+                        target="_blank">
+                        My Resume
                     </a>
                     <ModeToggle />
                     <Button variant="outline" size="icon" aria-label="Toggle menu" className="sm:hidden" onClick={() => setMenuOpen((open) => !open)}>
@@ -40,8 +42,12 @@ function Navbar() {
                     <a href="#work" className="text-base font-semibold hover:text-orange" onClick={() => setMenuOpen(false)}>
                         Projects
                     </a>
-                    <a href={resume} className="text-base font-semibold hover:text-orange" download onClick={() => setMenuOpen(false)}>
-                        Download Resume
+                    <a
+                        href="https://drive.google.com/drive/folders/14E6HRSro8pxIWO3JcozsY6qGv-c6M5QE?usp=sharing"
+                        className="text-base font-semibold hover:text-orange"
+                        target="_blank"
+                        onClick={() => setMenuOpen(false)}>
+                        My Resume
                     </a>
                 </div>
             )}

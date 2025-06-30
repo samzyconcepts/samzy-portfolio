@@ -1,3 +1,6 @@
+import Marquee from "react-fast-marquee";
+
+// import logo of tech skill used
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
@@ -5,7 +8,11 @@ import tailwindcss from "../assets/tailwindcss.png";
 import reactjs from "../assets/reactjs.png";
 import reduxLogo from "../assets/redux.png";
 import sass from "../assets/sass.png";
-import Marquee from "react-fast-marquee";
+import python from "@/assets/python.png";
+import express from "@/assets/express-js.png";
+import vuejs from "@/assets/icons8-vue-js-240.png";
+import nextjs from "@/assets/nextjs.png";
+import fastapi from "@/assets/FastAPI.png";
 
 // Add new skills here
 const skills = [
@@ -16,7 +23,11 @@ const skills = [
     { img: sass, label: "Sass" },
     { img: reactjs, label: "ReactJS" },
     { img: reduxLogo, label: "Redux" },
-    // { img: yourNewSkill, label: "Your Skill" },
+    { img: nextjs, label: "NextJs" },
+    { img: vuejs, label: "VueJs" },
+    { img: express, label: "ExpressJs" },
+    { img: python, label: "Python" },
+    { img: fastapi, label: "FastAPI" },
 ];
 
 const Skill = () => {
