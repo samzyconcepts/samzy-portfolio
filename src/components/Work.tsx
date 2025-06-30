@@ -23,20 +23,20 @@ const Work = () => {
                                 target="_blank"
                                 rel="noreferrer"
                                 key={project.name}
-                                className="overflow-hidden border-b-2 bg-white-dark hover:border-orange h-fit hover:bg-orange/15 dark:bg-muted dark:hover:bg-orange/30 rounded-t-3xl"
+                                className="overflow-hidden border-b-2 rounded-t-xl bg-white-dark hover:border-orange h-fit hover:bg-orange/15 dark:bg-muted dark:hover:bg-orange/30 md:rounded-t-3xl"
                                 data-aos={isEven ? "fade-right" : "fade-left"}
                                 data-aos-duration="800"
                                 data-aos-easing="ease-in-sine">
-                                <div className="w-full overflow-hidden bg-black h-[420px]">
+                                <div className="w-full overflow-hidden bg-black h-60  md:h-[420px]">
                                     <img src={project.image} className="object-cover w-full h-full" alt={project.name} />
                                 </div>
 
                                 <div className="px-8 py-6">
                                     <div className="flex items-center justify-between">
-                                        <h2 className="text-4xl font-bold font-clash">{project.name}</h2>
+                                        <h2 className="text-2xl font-bold md:text-4xl font-clash">{project.name}</h2>
                                         <MoveRight />
                                     </div>
-                                    <p className="my-4 text-xl text-muted-foreground">{project.description}</p>
+                                    <p className="my-4 md:text-xl text-muted-foreground">{project.description}</p>
                                 </div>
                             </a>
                         );
