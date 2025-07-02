@@ -3,10 +3,13 @@ import profileImg from "../assets/profileImg.png";
 import resume from "../assets/resume.pdf";
 import { Button, buttonVariants } from "./ui/button";
 import { FileDown, Mail } from "lucide-react";
+import { useState } from "react";
+import ContactDialog from "./contact_me_dialog";
 
 // I didn’t wait for perfect conditions — I learned, built, and shipped. Now I help teams and brands bring ideas to life with modern, scalable frontends that feel as good as they look.
 
 const Hero = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <header className="container grid items-center justify-between gap-6 pt-5 lg:grid-cols-2 lg:pt-0 ">
             <div className="space-y-6">
@@ -23,7 +26,7 @@ const Hero = () => {
                     cutting-edge frontend architectures.
                 </p>
                 <div data-aos="fade-right" data-aos-delay="500" className="flex flex-col gap-4 mt-6 sm:flex-row">
-                    <Button size={"lg"}>
+                    <Button size={"lg"} onClick={() => setIsOpen(!isOpen)}>
                         Say Hello <Mail />
                     </Button>
 
@@ -102,6 +105,8 @@ const Hero = () => {
                     data-aos-delay="200"
                 />
             </div>
+
+            <ContactDialog isOpen={isOpen} setIsOpen={setIsOpen} />
         </header>
     );
 };

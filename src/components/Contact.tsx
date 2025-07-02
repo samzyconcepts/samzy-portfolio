@@ -1,7 +1,10 @@
 import { Mail } from "lucide-react";
 import { Button } from "./ui/button";
+import ContactDialog from "./contact_me_dialog";
+import { useState } from "react";
 
 const Contact = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
         <section className="container">
             <div
@@ -18,11 +21,13 @@ const Contact = () => {
                     </p>
                 </div>
 
-                <Button size="lg" className="flex items-center justify-center gap-2 uppercase md:px-12 md:py-7">
+                <Button size="lg" className="flex items-center justify-center gap-2 uppercase md:px-12 md:py-7" onClick={() => setIsOpen(!isOpen)}>
                     Contact
                     <Mail />
                 </Button>
             </div>
+
+            <ContactDialog isOpen={isOpen} setIsOpen={setIsOpen} />
         </section>
     );
 };
